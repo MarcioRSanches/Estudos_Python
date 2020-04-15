@@ -6,14 +6,17 @@ atual  = date.today().year
 idade  = atual - ano
 tempo  = ano + 18
 alista = idade - 18
-if idade > 18:
-    print('Você tem {} anos, deveria ter se alistado {} anos atrás, em {}'.format(idade, alista, tempo ))
 
-if idade < 18:
-    print('Você tem {} anos, deverá se alistadar daqui há {} anos, em {}'.format(idade, abs(alista), tempo ))
+genero = input('Digite o seu sexo: (M)asculino ou (F)eminino ').strip().upper()
 
-if idade == 18:
-    print('Você tem {} anos, você tem que se alestar neste ano de {}'.format(idade, tempo ))
- 
-
-    
+if genero == 'M':
+    if idade > 18:
+        print('Você tem {} anos, deveria ter se alistado {} anos atrás, em {}'.format(idade, alista, tempo ))
+    elif idade < 18:
+        print('Você tem {} anos, deverá se alistadar daqui há {} anos, em {}'.format(idade, abs(alista), tempo ))
+    elif idade == 18:
+        print('Você tem {} anos, você tem que se alestar neste ano de {}'.format(idade, tempo ))
+if genero == 'F':
+    print('Para mulheres não é obrigatório o alistamento')
+if genero != 'M' and genero != 'F':
+    print('Informação inválida!')   
