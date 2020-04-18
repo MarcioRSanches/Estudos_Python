@@ -5,13 +5,12 @@ reta3 = float(input('Qual a medida da terceira reta? '))
 
 
 if reta3 < reta2+reta1 and reta2 < reta3+reta1 and reta1 < reta2+reta3:
-    print('Estas medidas PODEM formar um triangulo!')
-if reta1 == reta2 and reta2 == reta3 and reta1 == reta3:
-    print('Este é um triângulo EQUILÁTERO')
-if reta1 != reta2 and reta2 != reta3 and reta1 != reta3:
-    print('Este é um triângulo ESCALENO')
-if reta1 == reta2 or reta2 == reta3 or reta1 == reta3:
-    print('Este é um triângulo ISÓSCELES')  
-
+    print('Estas medidas PODEM formar um triangulo!', end=' ')
+    if reta1 == reta2 == reta3:
+        print('Este é um triângulo EQUILÁTERO')
+    elif reta1 != reta2 != reta3 != reta1:
+        print('Este é um triângulo ESCALENO')
+    else:
+        print('Este é um triângulo ISÓSCELES')  
 else:
     print('Estas medidas NÃO PODEM formar um triangulo')
