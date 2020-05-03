@@ -8,5 +8,3 @@ if sexo == 'M':
     print('O sexo informado foi Masculino' )
 if sexo == 'F':
      print('O sexo informado foi Feminino' )
-
-
