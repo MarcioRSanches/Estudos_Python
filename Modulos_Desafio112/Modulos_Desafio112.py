@@ -1,6 +1,8 @@
-import Pacotes_Desafio111.utilidades.moeda
+import dado
+import moeda
 
-valor = float(input('Digite o preço da mercadoria: R$ ' ))
+
+valor = dado.leiaDinheiro('Digite o preço da mercadoria: R$ ' )
 taxaa = float(input('Taxa de aumento: '))
 taxar = float(input('Taxa de redução: '))
 
