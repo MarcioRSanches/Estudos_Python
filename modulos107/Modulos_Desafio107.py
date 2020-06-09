@@ -1,3 +1,4 @@
+#from modulos107 import moeda
 import moeda
 
 valor = float(input('Digite o preço da mercadoria: R$ ' ))

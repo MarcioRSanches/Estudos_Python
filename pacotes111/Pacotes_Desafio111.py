@@ -1,5 +1,5 @@
-from Pacotes_Desafio111.utilidades import dado
-from Pacotes_Desafio111.utilidades import moeda
+from pacotes111.utilidades import dados
+from pacotes111.utilidades import moeda
 
 
 valor = leiaFloat('Digite o preço da mercadoria: R$ ' )
