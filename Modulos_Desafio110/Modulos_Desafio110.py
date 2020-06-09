@@ -1,4 +1,4 @@
-import moeda
+from Modulos_Desafio110 import moeda
 
 valor = float(input('Digite o preço da mercadoria: R$ ' ))
 taxaa = float(input('Taxa de aumento: '))
