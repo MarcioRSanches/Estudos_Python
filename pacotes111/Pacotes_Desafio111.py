@@ -1,8 +1,7 @@
-from pacotes111.utilidades import dados
 from pacotes111.utilidades import moeda
 
 
-valor = leiaFloat('Digite o preço da mercadoria: R$ ' )
+valor = float(input('Digite o preço da mercadoria: R$ ' ))
 taxaa = float(input('Taxa de aumento: '))
 taxar = float(input('Taxa de redução: '))
 

@@ -1,12 +1,10 @@
-from pacotes115.lib.arquivo import *
 from pacotes115.lib.interface import *
-
+from pacotes115.lib.arquivo import *
 
 arq = 'listapessoas.txt'
 
 if not arquivoExiste(arq):
     criarArquivo(arq)
-
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])

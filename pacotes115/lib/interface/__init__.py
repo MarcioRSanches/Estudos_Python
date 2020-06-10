@@ -28,4 +28,5 @@ def menu(lista):
         c += 1
     print(linha())
     opc = leiaInt('\033[32mSua opção:\033[m ')
+    return opc
 
